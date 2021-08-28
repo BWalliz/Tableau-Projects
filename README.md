@@ -12,3 +12,4 @@ This repository contains various Data Visualization and/or Tableau projects.
  
  ### 1. Ski Resort Dashboard
  
+ <img src="https://github.com/BWalliz/Tableau-Projects/blob/main/Ski%20Resort%20Analysis/Screenshots/ski_resort_dashboard.png" alt="SS 1"/>
