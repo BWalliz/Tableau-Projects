@@ -1,0 +1,3545 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook original-version='18.1' source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='ski_resort_dashboard' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='in (north_american_ski_resort_data)' inline='true' name='federated.19yuj5r1y4te6p19b798h1te15x0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='north_american_ski_resort_data' name='excel-direct.09x86vc0dugye416oj7yq1j05tlk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/bwall/Documents/Python/WebScraping/north_american_ski_resort_data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.09x86vc0dugye416oj7yq1j05tlk' name='in' table='[in$]' type='table'>
+          <columns gridOrigin='A1:K463:no:A1:K463:0' header='yes' outcome='6'>
+            <column datatype='string' name='Resort' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='integer' name='Peak elevation (ft)' ordinal='3' />
+            <column datatype='integer' name='Base elevation (ft)' ordinal='4' />
+            <column datatype='integer' name='Vertical drop (ft)' ordinal='5' />
+            <column datatype='integer' name='Skiable acreage' ordinal='6' />
+            <column datatype='integer' name='Total trails' ordinal='7' />
+            <column datatype='integer' name='Total lifts' ordinal='8' />
+            <column datatype='integer' name='Avg annual snowfall (in)' ordinal='9' />
+            <column datatype='integer' name='Lift ticket (USD)' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.09x86vc0dugye416oj7yq1j05tlk' name='in' table='[in$]' type='table'>
+          <columns gridOrigin='A1:K463:no:A1:K463:0' header='yes' outcome='6'>
+            <column datatype='string' name='Resort' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='integer' name='Peak elevation (ft)' ordinal='3' />
+            <column datatype='integer' name='Base elevation (ft)' ordinal='4' />
+            <column datatype='integer' name='Vertical drop (ft)' ordinal='5' />
+            <column datatype='integer' name='Skiable acreage' ordinal='6' />
+            <column datatype='integer' name='Total trails' ordinal='7' />
+            <column datatype='integer' name='Total lifts' ordinal='8' />
+            <column datatype='integer' name='Avg annual snowfall (in)' ordinal='9' />
+            <column datatype='integer' name='Lift ticket (USD)' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[in]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K463:no:A1:K463:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resort</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Resort]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Resort</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Peak elevation (ft)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Peak elevation (ft)]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Peak elevation (ft)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Base elevation (ft)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Base elevation (ft)]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Base elevation (ft)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vertical drop (ft)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Vertical drop (ft)]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Vertical drop (ft)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Skiable acreage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Skiable acreage]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Skiable acreage</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total trails</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total trails]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Total trails</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total lifts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total lifts]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Total lifts</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg annual snowfall (in)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg annual snowfall (in)]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Avg annual snowfall (in)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lift ticket (USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lift ticket (USD)]</local-name>
+            <parent-name>[in]</parent-name>
+            <remote-alias>Lift ticket (USD)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='INDEX()&lt;=10' datatype='boolean' name='[Calculation_3080462149907492865]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='INDEX() &lt;= 10'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='INDEX() &lt;= 5' datatype='boolean' name='[Calculation_3080462149908942852]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='INDEX() &lt;= 5'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Resort]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State (group)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <calculation class='categorical-bin' column='[State]' new-bin='true' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='in' datatype='table' name='[__tableau_internal_object_id__].[in_BCD72BD646A9490191C6BD2F6FD9105B]' role='measure' type='quantitative' />
+      <column-instance column='[Resort]' derivation='None' name='[none:Resort:nk]' pivot='key' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='State, City'>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/bwall/Documents/Tableau/in (north_american_ski_resort_data).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/27/2021 06:26:14 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='in (north_american_ski_resort_data)' increment-value='%null%' refresh-type='create' rows-inserted='462' timestamp-start='2021-08-27 18:26:14.239' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Resort</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Resort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Resort</remote-alias>
+              <ordinal>0</ordinal>
+              <family>in</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>457</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>1</ordinal>
+              <family>in</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>402</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>2</ordinal>
+              <family>in</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Peak elevation (ft)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Peak elevation (ft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Peak elevation (ft)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>370</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Base elevation (ft)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Base elevation (ft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Base elevation (ft)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>336</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vertical drop (ft)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Vertical drop (ft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vertical drop (ft)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>278</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Skiable acreage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Skiable acreage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Skiable acreage</remote-alias>
+              <ordinal>6</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>218</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total trails</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total trails]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total trails</remote-alias>
+              <ordinal>7</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total lifts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total lifts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total lifts</remote-alias>
+              <ordinal>8</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg annual snowfall (in)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Avg annual snowfall (in)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg annual snowfall (in)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>143</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lift ticket (USD)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Lift ticket (USD)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lift ticket (USD)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>in</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[in_BCD72BD646A9490191C6BD2F6FD9105B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Resort:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Andes Tower Hills&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bear Valley&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Blandford Ski Area&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Brighton Ski Resort&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cannonsburg Ski Area&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Copper Spur&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Eaton Mountain&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Great Divide&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Hunter Mountain&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kissing Bridge&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mad River Glen&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mont Tremblant Resort&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mount La Cross&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mt Bachelor&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Otis Ridge Ski Camp&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Powderhorn Resort&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Seven Oaks&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ski Mount Abraham&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Snowshoe Mountain&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sugarbush Resort&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Teton Pass&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Warner Canyon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Windham Mountain&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;49 Degrees North&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Attitash Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Big Snow Resort (includes Blackjack and Indianhead Mountain)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Boyce Park Four Seasons Lodge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Caberfae Peaks&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Christie Mountain&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Devil&apos;s Head Resort&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Giants Ridge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hogadon&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kewaunee Winter Park&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Loon Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Meadowlark Ski Lodge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mount Crescent&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mount Southington&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Northstar California&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Pine Creek&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Royal Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sitzmark Lifts&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Snow Snake Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Standing Rocks County Park and Winter Recreation Area&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sunshine Village&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trollhaugen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Whitetail Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Alpine Valley Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bald Mountain&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bittersweet Ski Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Breckenridge Ski Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Campgaw Mountain&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cockaigne Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Donner Ski Ranch&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Grand Targhee Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Homewood&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Killington Ski Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Loveland Ski Area&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mohawk Mountain&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mount Hood Skibowl&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mount Waterman&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Oak Mountain&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pomerelle Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sapphire Valley Ski Area&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ski Bradford&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Snowbasin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Stowe Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Taos Ski Valley&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Vail Ski Resort&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wildcat Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Appalachian Ski Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Beaver Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Blue Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Brundage Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cataloochee Ski Area&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Crested Butte&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Elk Mountain Ski Resort&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Hard&apos;ack Recreation Area&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jackson Hole Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Laurel Mountain Ski Resort&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Maple Ski Ridge&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Moose Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mount Pisgah Ski Area&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mt. Rose Ski Tahoe&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Paoli Peaks&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ragged Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Shawnee Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ski Ward&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Soldier Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sun Peaks Resort&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Thunder Ridge Ski Area&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Whaleback Mountain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wisp Ski Resort&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Angel Fire Resort [41]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Beartooth Basin Summer Ski Area&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Blizzard Mountain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bristol Mountain Ski Resort&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Canyon Ski Area&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cottonwood Butte&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Echo Mountain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Greek Peak Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Hurricane Ridge&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Labrador Mountain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Magic Mountain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mont-Sainte-Anne&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mount Lemmon Ski Valley&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mt Baker&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Otsego Club and Resort&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Powderhouse Hill&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Seven Springs Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ski Santa Fe&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Snowstar Winter Sports Park&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sugarloaf&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Homestead&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Waterville Valley Resort&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Winter Park Resort&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Alta Sierra&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bear Creek Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Black Mountain of Maine&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bretton Woods&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Campton Mountain&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Coffee Mill Ski Area&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dry Hill Ski Area&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Granite Gorge&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hoodoo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kimberley Alpine Resort&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lutsen Mountains&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Monarch&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mount Itasca&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mount Zion Ski Hill&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ober Gatlinburg&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Porcupine Mountains Ski Area&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sasquatch Mountain&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ski Bromont&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Snowbird&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Stratton Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Telluride Ski Resort&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Veterans Memorial Recreation Area&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Willamette Pass&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Aspen Highlands&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Big Rock&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Boston Mills/Brandywine&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Burke Mountain&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;China Peak&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Denton Hill State Park&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Four Season Ski Center&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Hidden Valley Resort&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kendall Mountain&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Little Switzerland Ski Area&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;McCauley Mountain Ski Center&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mount Bohemia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mount Ski Gull&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Nordic Mountain&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Petoskey Winter Sports Park&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rotarun&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Silverton Mountain&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Snow King&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Spruce Mountain Ski Slope&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sunlight Mountain&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Treetops Resort&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Whiteface Mountain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Abenaki Ski Area&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Badger Mountain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Big Squaw Mountain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Boyne Highlands Resort&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Camden Snow Bowl&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Christmas Mountain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Diamond Peak&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gore Mountain Ski Resort&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Holiday Mountain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Keyes Peak Ski Hill&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lost Trail Powder Mountain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Meany Lodge&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mount Eyak&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mount Spokane&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Norway Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Pine Knob&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Saddleback Maine&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ski Apache&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Snow Summit&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Steamboat Springs&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Swain Resort&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Turner Mountain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Whitetail Ridge Ski Area&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Arizona Snowbowl&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Big Creek&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Boreal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Buena Vista Ski Area&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Chester Bowl Park&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Dartmouth Skiway&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fernie Alpine Resort&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hickory Hills Ski Area&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kanc Recreation Area&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Lee&apos;s Ski Hill&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Massanutten Resort&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mount Baldy Ski Area&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mount Shasta Ski Park&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Navarino Hills&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Peek&apos;n Peak Resort&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Red River&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Silver Mountain&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Smuggler&apos;s Notch&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Spout Springs&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sunday River&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Titus Mountain Family Ski Center&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;White Pine&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Yawgoo Valley&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Alta Ski Area&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bear Mountain&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Black Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Brian Head&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Canaan Valley Resort&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cooper&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Eagle Point&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Granite Peak Ski Area&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Howelson Hill&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;King Pine Ski Area&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lyndon Outing Club&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mont Du Lac Resort&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mount Jefferson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mountain Creek&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Oglebay Resort&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Powder Mountain&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Schweitzer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ski Brule&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Snowhaven&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sugar Bowl&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tenney Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Villa Olivia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Willard Mountain&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Apple Mountain&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Beech Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Blue Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bryce Resort&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Catamount Ski Area&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Crotched Mountain Ski and Ride&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Elk Ridge&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Harper Mountain&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jay Peak&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Le Massif&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Marble Mountain Ski Resort&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mount Ashland Ski Area&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mount Pleasant of Edinboro&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mulligan&apos;s Hollow Ski Bowl&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Park City Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Red Hill Ski Area&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Shawnee Peak&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ski Wentworth&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Solitude Mountain&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sun Valley&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Timber Ridge&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Whistler Blackcomb&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Wolf Creek Ski Area&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Arapahoe Basin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Belleyare Ski Center&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bogus Basin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Buck Hill&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Chapman Ski Hill&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Crystal Mountain&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Elko Snobowl&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Heavenly Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jiminy Peak&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Leavenworth Ski Hill&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Marmot Basin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mount Ashwabay Ski and Recreation Area&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mount Prospect Ski Tow&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nakiska&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pats Peak Ski Area&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Red Lodge Mountain&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Showdown&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sleeping Giant&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Song Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sunburst Winter Sports Park&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Timberline Lodge&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;White Hills Ski Resort&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Wolf Ridge Ski Resort&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Arrowhead Recreation Area&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Big Powderhorn Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bosquet Ski Area&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Buffalo Ski Center&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Chestnut Mountain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Deer Valley&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Four Lakes Alpine Snowsports&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hidden Valley&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kelly Canyon&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Liberty Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Maverick Mountain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mount Baldy Ski Lifts&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mount Sima&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;New Hermon Mountain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Perfect North Slopes&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Revelstoke Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Silver Star Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Snow Creek&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Spring Mountain Adventure&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Sundown Mountain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Toggenburg Mountain Ski Center&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Whitecap Mountains Resort&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Aspen Mountain&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Big Sky Resort&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bottineau Winter Park&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Buttermilk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Chipmunk Hill&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Detroit Mountain&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Frost Fire&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hilltop&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kettlebowl Ski Area&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Living Memorial Park&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;McIntyre Ski Area&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mount Brighton&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mount Snow&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nordic Valley&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Pico Mountain&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Roundtop Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sipapu&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Snow Ridge Ski Resort&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Squaw Valley-Alpine Meadows&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sunrise Park&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Triangle Sports Area&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Whitefish Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Anthony Lakes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Beartown Ski Area&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Blue Hills Ski Area&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bromley Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cascade Mountain&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cranmore Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Echo Valley&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Grouse Mountain&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hyland Hills&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lake City&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mammoth Mountain&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Montage Mountain Resorts&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mount McSauba&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mt. Eustis Ski Hill&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pajarito Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Powers Bluff County Park and Winter Recreation Area&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shames Mountain&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ski Sawmill Resort&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Snowy Range&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Suicide Six&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Rock Snowpark&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Welch Village&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wintergreen&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Alyeska Resort&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bear Paw Ski Bowl&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Blacktail Mountain&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bridger Bowl&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cannon Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Copper Mountain (Colorado)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Eaglecrest&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Great Bear Ski Valley&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Huff Hills&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kirkwood&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mad River&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mont Ripley Ski Area&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mount Kato&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mountain High&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Okemo Mountain&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Powder Ridge&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Searchmont&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ski Butternut&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Snowmass&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sugar Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Terry Peak&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wachusett Mountain&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wilmot Mountain Ski Resort&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Afton Alps&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Badger Pass&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Big Tupper Ski Area&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Boyne Mountain&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Camelback Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cloudmont Resort&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Discovery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Granby Ranch&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Holiday Valley&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Keystone Resort&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lost Valley&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Middlebury College Snow Bowl&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mount Holiday Ski and Recreational Area&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mount Sunapee Resort&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nub&apos;s Nob Ski Area&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pine Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Salmo Ski Area&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ski Big Bear&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Snow Trails&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Stevens Pass&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tahoe Donner&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tussey Mountain Ski and Recreation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Whitewater Ski Resort&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Arctic Valley&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Berkshire East&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bolton Valley&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Buckhorn Ski and Snowboard Club&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cherry Peak&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cypress Mountain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ferguson Ridge&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hesperus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;June Mountain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lee Canyon (Ski and Snowboard Resort)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Marquette Mountain Ski Area&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mount Aurora Skiland&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mount Seymour&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nashoba Valley&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pebble Creek&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Red Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sierra-at-Tahoe&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sleepy Hollows Sports Park&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Spirit Mountain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sundance Mountain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Titcomb Mountain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;White Pass&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Woods Valley Ski Area&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Apex Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Beaver Creek&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Blue Knob All Seasons Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bruce Mound Winter Sports Area&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Castle Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cranor Hill&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Eldora Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gunstock Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jack Frost - Big Boulder Ski Area&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lake Louise Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Manning Park&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Montana Snowbowl&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mount Peter&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mt. Norquay&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Panorama Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Purgatory Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shanty Creek Resort&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ski Sundown&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Soda Springs&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Summit Ski Area&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Summit at Snoqualmie&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;West Mountain&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Winterplace&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alpine Valley&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Baker Mountain&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Big White Ski Resort&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Brantling Ski Slopes&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Camp 10 Ski Area&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cochran&apos;s Ski Area&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dodge Ridge&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Grand Geneva Resort and Spa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Homestead Resort&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kicking Horse Resort&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Loup Loup Ski Bowl&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mission Ridge&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mount Hood Meadows&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mount Washington Alpine Resort&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nutt Hill Ski Area&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Plattekill Mountain&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sandia Peak&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ski Bluewood&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Snow Valley Mountain Resort&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Storrs Hill Ski Area&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tamarack&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tyrol Basin&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Wild Mountain&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='in' id='in_BCD72BD646A9490191C6BD2F6FD9105B'>
+            <properties context=''>
+              <relation connection='excel-direct.09x86vc0dugye416oj7yq1j05tlk' name='in' table='[in$]' type='table'>
+                <columns gridOrigin='A1:K463:no:A1:K463:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Resort' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='integer' name='Peak elevation (ft)' ordinal='3' />
+                  <column datatype='integer' name='Base elevation (ft)' ordinal='4' />
+                  <column datatype='integer' name='Vertical drop (ft)' ordinal='5' />
+                  <column datatype='integer' name='Skiable acreage' ordinal='6' />
+                  <column datatype='integer' name='Total trails' ordinal='7' />
+                  <column datatype='integer' name='Total lifts' ordinal='8' />
+                  <column datatype='integer' name='Avg annual snowfall (in)' ordinal='9' />
+                  <column datatype='integer' name='Lift ticket (USD)' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Box Plot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='16'>Lift Ticket (USD) Box Plot</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='in (north_american_ski_resort_data)' name='federated.19yuj5r1y4te6p19b798h1te15x0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19yuj5r1y4te6p19b798h1te15x0'>
+            <column datatype='integer' name='[Lift ticket (USD)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Resort]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Resort]' derivation='None' name='[none:Resort:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Lift ticket (USD)]' derivation='Sum' name='[sum:Lift ticket (USD):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Resort:nk]' direction='DESC' using='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Lift ticket (USD):qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='135' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Resort:nk]' />
+              <lod column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Lift ticket (USD):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Lift ticket (USD):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='456' />
+                <format attr='maxheight' value='456' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Lift ticket (USD):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5763BF91-E191-484F-8908-0DC6E0EE7D75}' />
+    </worksheet>
+    <worksheet name='Density Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='16'>Ski Resorts based on Average Annual Snowfall (in)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='in (north_american_ski_resort_data)' name='federated.19yuj5r1y4te6p19b798h1te15x0' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19yuj5r1y4te6p19b798h1te15x0'>
+            <column datatype='integer' name='[Avg annual snowfall (in)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Resort]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Resort]' derivation='None' name='[none:Resort:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg annual snowfall (in)]' derivation='Sum' name='[sum:Avg annual snowfall (in):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.19yuj5r1y4te6p19b798h1te15x0].[Longitude (generated)]' field-type='quantitative' max='-5077227.6879526293' min='-17616308.045418724' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.19yuj5r1y4te6p19b798h1te15x0].[Latitude (generated)]' field-type='quantitative' max='9883414.8757696599' min='3474809.0652277726' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <encodings>
+              <color column='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Avg annual snowfall (in):qk]' />
+              <lod column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:City:nk]' />
+              <lod column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Resort:nk]' />
+              <lod column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='density-color' palette='blue_teal_10_0' type='interpolated' />
+                <format attr='density-intensity' value='0.77808284759521484' />
+                <format attr='has-stroke' value='true' />
+                <format attr='density-kernel-size' value='1.2413811683654785' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='167' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='1106' />
+                <format attr='maxheight' value='1106' />
+                <format attr='minwidth' value='2164' />
+                <format attr='maxwidth' value='2164' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19yuj5r1y4te6p19b798h1te15x0].[Latitude (generated)]</rows>
+        <cols>[federated.19yuj5r1y4te6p19b798h1te15x0].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4854B867-D784-42F1-85F4-5D6C006BB308}' />
+    </worksheet>
+    <worksheet name='Top 10 Cities by Average Annual Snowfall (in)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>Top 10 Cities by Average Annual Snowfall (in)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='in (north_american_ski_resort_data)' name='federated.19yuj5r1y4te6p19b798h1te15x0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19yuj5r1y4te6p19b798h1te15x0'>
+            <column datatype='integer' name='[Avg annual snowfall (in)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg annual snowfall (in)]' derivation='Sum' name='[sum:Avg annual snowfall (in):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Avg annual snowfall (in):qk]' included-values='in-range-or-null'>
+            <min>641</min>
+            <max>2060</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:City:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Avg annual snowfall (in):qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Avg annual snowfall (in):qk]</column>
+            <column>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:City:nk]' value='75' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Avg annual snowfall (in):qk]</rows>
+        <cols>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:City:nk]</cols>
+      </table>
+      <simple-id uuid='{A2F23DBD-4D10-467E-A54F-16C00668A6CA}' />
+    </worksheet>
+    <worksheet name='Total Lifts vs. Total Trails'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='16'>Total Lifts vs. Total Trails Categorized by Skiable Acreage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='in (north_american_ski_resort_data)' name='federated.19yuj5r1y4te6p19b798h1te15x0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19yuj5r1y4te6p19b798h1te15x0'>
+            <column datatype='string' name='[Resort]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Skiable acreage]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Total lifts]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total trails]' role='measure' type='quantitative' />
+            <column-instance column='[Resort]' derivation='None' name='[none:Resort:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Skiable acreage]' derivation='Sum' name='[sum:Skiable acreage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total lifts]' derivation='Sum' name='[sum:Total lifts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total trails]' derivation='Sum' name='[sum:Total trails:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Skiable acreage:qk]' />
+              <lod column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Resort:nk]' />
+              <lod column='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Total lifts:qk]</rows>
+        <cols>[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Total trails:qk]</cols>
+      </table>
+      <simple-id uuid='{289F838E-9D49-4F47-8CC2-A834E22438F8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Ski Resort Dashboard '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='22'>Ski Resort Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='40' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone fixed-size='1606' h='98222' id='38' is-fixed='true' type-v2='layout-basic' w='99000' x='500' y='889' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='47778' id='7' name='Total Lifts vs. Total Trails' w='44188' x='55750' y='52111'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='49778' id='3' name='Density Map' w='55000' x='438' y='5000'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='14333' id='11' name='Total Lifts vs. Total Trails' pane-specification-id='0' param='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Skiable acreage:qk]' type-v2='size' w='8438' x='90688' y='69000' />
+        <zone h='46889' id='24' name='Box Plot' w='44125' x='55750' y='5000'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='44778' id='29' name='Top 10 Cities by Average Annual Snowfall (in)' w='55125' x='375' y='55000'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='0' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='17667' id='34' name='Top 10 Cities by Average Annual Snowfall (in)' pane-specification-id='0' param='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]' type-v2='color' w='8438' x='46750' y='60111' />
+        <zone fixed-size='44' h='4277' id='41' is-fixed='true' type-v2='title' w='99456' x='484' y='428'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='22'>Ski Resort Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='67' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='66' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone fixed-size='44' h='4277' id='41' type-v2='title' w='99456' x='484' y='428'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49778' id='3' is-fixed='true' name='Density Map' w='55000' x='438' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46889' id='24' is-fixed='true' name='Box Plot' w='44125' x='55750' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47778' id='7' is-fixed='true' name='Total Lifts vs. Total Trails' w='44188' x='55750' y='52111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone h='14333' id='11' name='Total Lifts vs. Total Trails' pane-specification-id='0' param='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Skiable acreage:qk]' type-v2='size' w='8438' x='90688' y='69000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44778' id='29' is-fixed='true' name='Top 10 Cities by Average Annual Snowfall (in)' w='55125' x='375' y='55000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone h='17667' id='34' name='Top 10 Cities by Average Annual Snowfall (in)' pane-specification-id='0' param='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]' type-v2='color' w='8438' x='46750' y='60111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{08D390F8-4F64-4EAD-B06E-BE0A768E3878}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Ski Resort Dashboard '>
+      <viewpoints>
+        <viewpoint name='Box Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Density Map'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+        </viewpoint>
+        <viewpoint name='Top 10 Cities by Average Annual Snowfall (in)'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Total Lifts vs. Total Trails'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{572A128E-4EF4-4F75-9612-207F61C0D543}' />
+    </window>
+    <window class='worksheet' name='Density Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='174'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[State (group)]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[attr:State:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Avg annual snowfall (in):qk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Resort:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A578E5F0-85F0-4C85-8A3F-CB65D17E9D14}' />
+    </window>
+    <window class='worksheet' name='Top 10 Cities by Average Annual Snowfall (in)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:City:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[usr:Calculation_3080462149907492865:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[usr:Calculation_3080462149908942852:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A4D39265-9F22-4940-B78B-D540ACA9C592}' />
+    </window>
+    <window class='worksheet' name='Total Lifts vs. Total Trails'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19yuj5r1y4te6p19b798h1te15x0].[sum:Skiable acreage:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Resort:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D5443080-91BD-47D3-9140-1CE5F3575E36}' />
+    </window>
+    <window class='worksheet' name='Box Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Lift ticket (USD):qk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:Resort:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[none:State:nk]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[usr:Calculation_3080462149907492865:nk:2]</field>
+            <field>[federated.19yuj5r1y4te6p19b798h1te15x0].[usr:Calculation_3080462149908942852:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{17ADC26A-7423-4159-8261-A110598C0F22}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Box Plot' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Density Map' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Ski Resort Dashboard ' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 Cities by Average Annual Snowfall (in)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Lifts vs. Total Trails' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
