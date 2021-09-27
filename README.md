@@ -13,7 +13,9 @@ This repository contains various Data Visualization and/or Tableau projects.
  
  ### 1. Supermarket Sales Performance
  
+ <img src="https://github.com/BWalliz/Tableau-Projects/blob/main/Supermarket%20Sales%20Performance/Screenshots/dashboard1.png" alt="SS 1"/>
  
+ <img src="https://github.com/BWalliz/Tableau-Projects/blob/main/Supermarket%20Sales%20Performance/Screenshots/dashboard2.png" alt="SS 1"/>
  
  ### 2. Ski Resort Dashboard
  
