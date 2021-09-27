@@ -11,11 +11,15 @@ This repository contains various Data Visualization and/or Tableau projects.
  
  ## Screenshots
  
- ### 1. Ski Resort Dashboard
+ ### 1. Supermarket Sales Performance
+ 
+ 
+ 
+ ### 2. Ski Resort Dashboard
  
  <img src="https://github.com/BWalliz/Tableau-Projects/blob/main/Ski%20Resort%20Analysis/Screenshots/ski_resort_dashboard.png" alt="SS 1"/>
  
- ### 2. Video Game Analytics Dashboard
+ ### 3. Video Game Analytics Dashboard
  
  <img src="https://github.com/BWalliz/Tableau-Projects/blob/main/Video%20Game%20Analysis/Screenshots/dashboard1.png" alt="SS 1"/>
  
