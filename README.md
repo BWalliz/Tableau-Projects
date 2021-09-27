@@ -1,11 +1,11 @@
 # Tableau Projects
 This repository contains various Data Visualization and/or Tableau projects. 
 
-| Name | Description |
-| ---- | ----------- |
-| [Supermarket Sales Performance](https://public.tableau.com/views/SupermarketSalesPerformance_16327699218330/SupermarketAnalytics-1?:language=en-US&:display_count=n&:origin=viz_share_link) | ---- |
-| [Ski Resort Analysis](https://public.tableau.com/views/SkiResortDashboard_16301888847180/SkiResortDashboard?:language=en-US&:display_count=n&:origin=viz_share_link) |---|
-| [Video Game Dashboard](https://public.tableau.com/views/VideoGameAnalytics/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) | ---|
+| Name |
+| ---- | 
+| [Supermarket Sales Performance](https://public.tableau.com/views/SupermarketSalesPerformance_16327699218330/SupermarketAnalytics-1?:language=en-US&:display_count=n&:origin=viz_share_link) |
+| [Ski Resort Analysis](https://public.tableau.com/views/SkiResortDashboard_16301888847180/SkiResortDashboard?:language=en-US&:display_count=n&:origin=viz_share_link) |
+| [Video Game Dashboard](https://public.tableau.com/views/VideoGameAnalytics/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) |
  
  View all of my Tableau Projects on my Tableau Public Profile: [Click here](https://public.tableau.com/app/profile/brandon.wallace)
  
